@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout'
 
 // Public Pages
-import Home from '../pages/Home'
+import Home from '../pages/Home/home'
 import About from '../pages/About'
 import Services from '../pages/Services'
 import Portfolio from '../pages/Portfolio'

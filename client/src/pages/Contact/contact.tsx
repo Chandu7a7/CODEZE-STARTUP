@@ -126,105 +126,119 @@ const Contact = () => {
 </div>
 </div>
       {/* Form */}
-      <div className="relative">
+<div className="relative">
 
-        <div className="relative bg-white border border-slate-100 rounded-[32px] p-6 md:p-8 shadow-lg">
+  <div className="relative bg-white border border-slate-100 rounded-[32px] p-6 md:p-8 shadow-lg">
 
-          <h2 className="text-3xl font-black text-slate-900">
-            Send a Message
-          </h2>
+    <h2 className="text-3xl font-black text-slate-900">
+      Send a Message
+    </h2>
 
-          <p className="mt-2 text-sm text-slate-600">
-            Fill out the form below and we’ll get back to you promptly.
-          </p>
+    <p className="mt-2 text-sm text-slate-600">
+      Fill out the form below and we’ll get back to you promptly.
+    </p>
 
-          <form className="mt-8 space-y-5">
+    <form className="mt-8 space-y-5">
 
-            {/* Row */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {/* First + Last Name */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-              <div>
-                <label className="text-sm font-semibold text-slate-700">
-                  Full Name
-                </label>
+        <div>
+          <label className="text-sm font-semibold text-slate-700">
+            First Name
+          </label>
 
-                <input
-                  type="text"
-                  placeholder="John Doe"
-                  className="w-full mt-2 px-4 py-3 rounded-2xl border border-slate-200 outline-none text-sm focus:border-blue-500"
-                />
-              </div>
+          <input
+            type="text"
+            placeholder="John"
+            className="w-full mt-2 px-4 py-3 rounded-2xl border border-slate-200 outline-none text-sm focus:border-blue-500"
+          />
+        </div>
 
-              <div>
-                <label className="text-sm font-semibold text-slate-700">
-                  Email Address
-                </label>
+        <div>
+          <label className="text-sm font-semibold text-slate-700">
+            Last Name
+          </label>
 
-                <input
-                  type="email"
-                  placeholder="john@example.com"
-                  className="w-full mt-2 px-4 py-3 rounded-2xl border border-slate-200 outline-none text-sm focus:border-blue-500"
-                />
-              </div>
-            </div>
-
-            {/* Row */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-              <div>
-                <label className="text-sm font-semibold text-slate-700">
-                  Company
-                </label>
-
-                <input
-                  type="text"
-                  placeholder="Your Company"
-                  className="w-full mt-2 px-4 py-3 rounded-2xl border border-slate-200 outline-none text-sm focus:border-blue-500"
-                />
-              </div>
-
-              <div>
-                <label className="text-sm font-semibold text-slate-700">
-                  Service
-                </label>
-
-                <select className="w-full mt-2 px-4 py-3 rounded-2xl border border-slate-200 outline-none text-sm bg-white focus:border-blue-500">
-                  <option>Select service...</option>
-                  <option>Software Development Frontend</option>
-                  <option>Software Development Backend</option>
-                  <option>Software Development Web App</option>
-                  <option>Software Development Mobile App</option>
-                  <option>Software Development Database</option>
-                  <option>Software Development UI/UX Design</option>
-                </select>
-              </div>
-            </div>
-
-            {/* Message */}
-            <div>
-              <label className="text-sm font-semibold text-slate-700">
-                Message
-              </label>
-
-              <textarea
-                rows={5}
-                placeholder="Tell us about your project..."
-                className="w-full mt-2 px-4 py-4 rounded-2xl border border-slate-200 outline-none resize-none text-sm focus:border-blue-500"
-              />
-            </div>
-
-            {/* Button */}
-            <button
-              type="submit"
-              className="group inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-sm font-semibold shadow-lg hover:scale-105 transition-all duration-300"
-            >
-              Send Message
-
-              <Send className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </button>
-          </form>
+          <input
+            type="text"
+            placeholder="Doe"
+            className="w-full mt-2 px-4 py-3 rounded-2xl border border-slate-200 outline-none text-sm focus:border-blue-500"
+          />
         </div>
       </div>
+
+      {/* Email + Mobile */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <div>
+          <label className="text-sm font-semibold text-slate-700">
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            placeholder="john@example.com"
+            className="w-full mt-2 px-4 py-3 rounded-2xl border border-slate-200 outline-none text-sm focus:border-blue-500"
+          />
+        </div>
+
+        <div>
+          <label className="text-sm font-semibold text-slate-700">
+            Mobile Number
+          </label>
+
+          <input
+            type="tel"
+            placeholder="+91 98765 43210"
+            className="w-full mt-2 px-4 py-3 rounded-2xl border border-slate-200 outline-none text-sm focus:border-blue-500"
+          />
+        </div>
+      </div>
+
+      {/* Service */}
+      <div>
+        <label className="text-sm font-semibold text-slate-700">
+          Service
+        </label>
+
+        <select className="w-full mt-2 px-4 py-3 rounded-2xl border border-slate-200 outline-none text-sm bg-white focus:border-blue-500">
+          <option>Select service...</option>
+          <option>Frontend Development</option>
+          <option>Backend Development</option>
+          <option>Full Stack Web App</option>
+          <option>Mobile App Development</option>
+          <option>Database Development</option>
+          <option>UI/UX Design</option>
+          <option>AI Integration</option>
+        </select>
+      </div>
+
+      {/* Message */}
+      <div>
+        <label className="text-sm font-semibold text-slate-700">
+          Message
+        </label>
+
+        <textarea
+          rows={5}
+          placeholder="Tell us about your project..."
+          className="w-full mt-2 px-4 py-4 rounded-2xl border border-slate-200 outline-none resize-none text-sm focus:border-blue-500"
+        />
+      </div>
+
+      {/* Button */}
+      <button
+        type="submit"
+        className="group inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-sm font-semibold shadow-lg hover:scale-105 transition-all duration-300"
+      >
+        Send Message
+
+        <Send className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+      </button>
+    </form>
+  </div>
+</div>
     </div>
   </div>
 </section>

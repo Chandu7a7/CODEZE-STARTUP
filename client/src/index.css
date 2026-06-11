@@ -1,3 +1,35 @@
+/* Add in index.css */
+
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: max-content;
+
+  /* LEFT TO RIGHT */
+  animation: marqueeLeftToRight 30s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* LEFT → RIGHT */
+@keyframes marqueeLeftToRight {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
 :root {
   --text: #6b6375;
   --text-h: #08060d;
