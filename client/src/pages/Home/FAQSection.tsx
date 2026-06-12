@@ -147,12 +147,21 @@ const FAQSection = () => {
                   Our team replies within 24 hours.
                 </p>
 
-                <button className="mt-5 inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 text-[13px] font-semibold text-blue-600 hover:scale-105 transition-all duration-300">
-<a href="/contact">Ask a Question</a>
-                  
+                <a
+  href="https://wa.me/919977413362"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group mt-5 inline-flex items-center gap-3 rounded-2xl border border-white/60 bg-white/90 backdrop-blur-xl px-6 py-3.5 text-[13px] font-semibold text-slate-700 shadow-[0_10px_30px_rgba(59,130,246,0.08)] hover:-translate-y-1 hover:border-green-200 hover:bg-green-50 hover:text-green-600 hover:shadow-[0_18px_45px_rgba(34,197,94,0.15)] transition-all duration-300"
+>
 
-                  <ArrowRight className="w-4 h-4" />
-                </button>
+  {/* Text */}
+  <span>
+    Ask on WhatsApp
+  </span>
+
+  {/* Arrow */}
+  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-all duration-300" />
+</a>
               </div>
             </div>
           </div>

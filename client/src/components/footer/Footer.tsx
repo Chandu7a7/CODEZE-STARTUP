@@ -107,36 +107,35 @@ const Footer = () => {
                   Madhya Pradesh, India
                 </p>
               </div>
+{/* Email */}
+<div className="flex items-center gap-3">
 
-              {/* Email */}
-              <div className="flex items-center gap-3">
+  <div className="w-11 h-11 rounded-2xl bg-white border border-slate-100 flex items-center justify-center text-[16px] shadow-sm">
+    ✉️
+  </div>
 
-                <div className="w-11 h-11 rounded-2xl bg-white border border-slate-100 flex items-center justify-center text-[16px] shadow-sm">
-                  ✉️
-                </div>
+  <a
+    href="mailto:codeza@gmail.com"
+    className="text-[14px] text-slate-500 hover:text-blue-600 hover:translate-x-1 transition-all duration-300"
+  >
+    codeza@gmail.com
+  </a>
+</div>
 
-                <a
-                  href="mailto:hello@codeza.in"
-                  className="text-[14px] text-slate-500 hover:text-blue-600 transition-all duration-300"
-                >
-                  hello@codeza.in
-                </a>
-              </div>
+{/* Phone */}
+<div className="flex items-center gap-3">
 
-              {/* Phone */}
-              <div className="flex items-center gap-3">
+  <div className="w-11 h-11 rounded-2xl bg-white border border-slate-100 flex items-center justify-center text-[16px] shadow-sm">
+    📞
+  </div>
 
-                <div className="w-11 h-11 rounded-2xl bg-white border border-slate-100 flex items-center justify-center text-[16px] shadow-sm">
-                  📞
-                </div>
-
-                <a
-                  href="tel:+919302451035"
-                  className="text-[14px] text-slate-500 hover:text-blue-600 transition-all duration-300"
-                >
-                  +91 93024 51035
-                </a>
-              </div>
+  <a
+    href="tel:+919977413362"
+    className="text-[14px] text-slate-500 hover:text-blue-600 hover:translate-x-1 transition-all duration-300"
+  >
+    +91 99774 13362
+  </a>
+</div>
             </div>
           </div>
         </div>
