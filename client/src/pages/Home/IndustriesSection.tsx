@@ -109,69 +109,71 @@ const IndustriesSection = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Heading */}
-        <div className="text-center max-w-4xl mx-auto mb-14">
+       {/* Heading */}
+<div className="text-center max-w-3xl mx-auto mb-10">
 
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/80 backdrop-blur-2xl border border-blue-100 text-blue-600 text-[10px] font-bold tracking-[2px] uppercase shadow-sm mb-7">
+  {/* Badge */}
+  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-2xl border border-blue-100 text-blue-600 text-[10px] font-semibold tracking-[2px] uppercase shadow-sm mb-5">
 
-            <Sparkles className="w-3.5 h-3.5" />
+    <Sparkles className="w-3.5 h-3.5" />
 
-            Industries We Serve
-          </div>
+    Industries We Serve
+  </div>
 
-          {/* Title */}
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-[-2px] leading-[1] text-slate-800">
+  {/* Title */}
+  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-[-1.8px] leading-[1.02] text-slate-800">
 
-            Deep expertise across
+    Deep expertise across
 
-            <span className="block mt-2 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-500 bg-clip-text text-transparent italic">
-              every industry
-            </span>
-          </h2>
+    <span className="block mt-1 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-500 bg-clip-text text-transparent italic">
+      every industry
+    </span>
+  </h2>
 
-          {/* Description */}
-          <p className="mt-6 text-[15px] sm:text-base leading-8 text-slate-500 max-w-2xl mx-auto">
-            We craft scalable digital solutions tailored for modern
-            industries, startups, enterprises and next-generation
-            businesses.
-          </p>
-        </div>
+  {/* Description */}
+  <p className="mt-5 text-[14px] sm:text-[15px] leading-7 text-slate-500 max-w-xl mx-auto font-medium">
+    We craft scalable digital solutions for startups,
+    enterprises and modern businesses with premium
+    user experiences.
+  </p>
+</div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+      {/* Cards */}
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
 
-          {industries.map((industry, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-[30px] bg-white/85 backdrop-blur-2xl border border-white/60 px-6 py-8 text-center shadow-[0_10px_35px_rgba(59,130,246,0.06)] hover:-translate-y-1 hover:shadow-[0_18px_55px_rgba(59,130,246,0.12)] transition-all duration-500"
-            >
+  {industries.map((industry, index) => (
+    <div
+      key={index}
+      className="group relative overflow-hidden rounded-[24px] bg-white/80 backdrop-blur-2xl border border-white/60 px-4 py-6 text-center shadow-[0_8px_28px_rgba(59,130,246,0.05)] hover:-translate-y-1 hover:shadow-[0_14px_45px_rgba(59,130,246,0.10)] transition-all duration-500"
+    >
 
-              {/* Glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-all duration-500" />
+      {/* Premium Glow */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.03] via-transparent to-cyan-500/[0.03] opacity-0 group-hover:opacity-100 transition-all duration-500" />
 
-              {/* Icon */}
-              <div
-                className={`relative w-16 h-16 mx-auto rounded-3xl ${industry.bg} flex items-center justify-center mb-6 shadow-sm`}
-              >
+      {/* Icon */}
+      <div
+        className={`relative w-14 h-14 mx-auto rounded-2xl ${industry.bg} flex items-center justify-center mb-4 shadow-sm`}
+      >
 
-                <industry.icon
-                  className={`w-7 h-7 ${industry.color}`}
-                />
-              </div>
+        <industry.icon
+          className={`w-6 h-6 ${industry.color}`}
+        />
+      </div>
 
-              {/* Title */}
-              <h3 className="relative text-[22px] font-bold tracking-[-0.5px] text-slate-800 leading-tight">
-                {industry.title}
-              </h3>
+      {/* Title */}
+      <h3 className="relative text-[18px] font-semibold tracking-[-0.4px] text-slate-700 leading-tight">
 
-              {/* Desc */}
-              <p className="relative mt-3 text-[14px] leading-7 text-slate-500">
-                {industry.desc}
-              </p>
-            </div>
-          ))}
-        </div>
+        {industry.title}
+      </h3>
+
+      {/* Description */}
+      <p className="relative mt-2 text-[13px] leading-6 font-medium text-slate-500">
+
+        {industry.desc}
+      </p>
+    </div>
+  ))}
+</div>
       </div>
     </section>
   );

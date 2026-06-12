@@ -4,7 +4,7 @@ import MainLayout from '../layouts/MainLayout'
 
 // Public Pages
 import Home from '../pages/Home/home'
-import About from '../pages/About'
+import About from '../pages/About/aboutUs'
 import Services from '../pages/Services'
 import Portfolio from '../pages/Portfolio'
 import Blog from '../pages/Blog'

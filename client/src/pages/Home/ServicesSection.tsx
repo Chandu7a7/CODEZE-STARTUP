@@ -71,33 +71,33 @@ const ServicesSection = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-10">
+       {/* Heading */}
+<div className="text-center max-w-3xl mx-auto mb-10">
 
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-xl text-blue-600 text-[10px] font-semibold tracking-[2px] uppercase shadow-sm mb-5">
+  {/* Badge */}
+  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-2xl border border-blue-100 text-blue-600 text-[10px] font-semibold tracking-[2px] uppercase shadow-sm mb-5">
 
-            <Sparkles className="w-3.5 h-3.5" />
+    <Sparkles className="w-3.5 h-3.5" />
 
-            What We Build
-          </div>
+    What We Build
+  </div>
 
-          {/* Title */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-[-2px] leading-[1.05] text-slate-700">
+  {/* Title */}
+  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-[-1.8px] leading-[1.02] text-slate-800">
 
-            End-to-end
+    End-to-end
 
-            <span className="ml-2 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-              digital solutions
-            </span>
-          </h2>
+    <span className="ml-2 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-500 bg-clip-text text-transparent italic">
+      digital solutions
+    </span>
+  </h2>
 
-          {/* Description */}
-          <p className="mt-4 text-[14px] sm:text-[15px] leading-7 text-slate-500 max-w-xl mx-auto">
-            From MVP to enterprise platforms — we partner with you
-            at every stage of your digital journey.
-          </p>
-        </div>
+  {/* Description */}
+  <p className="mt-5 text-[14px] sm:text-[15px] leading-7 text-slate-500 max-w-xl mx-auto font-medium">
+    From MVP to enterprise platforms — we partner
+    with you at every stage of your digital journey.
+  </p>
+</div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
