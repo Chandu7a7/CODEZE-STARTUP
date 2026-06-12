@@ -7,9 +7,8 @@ import logo from "../../assets/codeza-logo.png";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Services", path: "/services" },
+  { name: "Services ", path: "/services" },
   { name: "Portfolio", path: "/portfolio" },
-  { name: "Pricing", path: "/pricing" },
   { name: "Blog", path: "/blog" },
 ];
 
